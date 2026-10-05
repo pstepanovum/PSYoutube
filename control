@@ -1,0 +1,10 @@
+Package: com.pstepanovum.psyoutube
+Name: PSYoutube
+Version: 0.1.0
+Architecture: iphoneos-arm
+Description: YouTube with background playback, no ads and SponsorBlock.
+Homepage: https://github.com/pstepanovum/PSYoutube
+Maintainer: Pavel Stepanov
+Author: Pavel Stepanov
+Section: Tweaks
+Depends: mobilesubstrate

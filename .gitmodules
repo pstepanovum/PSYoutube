@@ -1,0 +1,6 @@
+[submodule "modules/FLEXing"]
+	path = modules/FLEXing
+	url = https://github.com/SoCuul/FLEXing
+[submodule "modules/YouTubeHeader"]
+	path = modules/YouTubeHeader
+	url = https://github.com/PoomSmart/YouTubeHeader
