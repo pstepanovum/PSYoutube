@@ -2,7 +2,7 @@
 **YouTube that respects your time.**\
 `Version v0.1.0` | `Tested on YouTube 21.40.5`
 
-PSYoutube is an iOS tweak for the YouTube app: background playback with the screen locked, no ads, and automatic skipping of sponsor segments with [SponsorBlock](https://sponsor.ajay.app).
+PSYoutube is an iOS tweak for the YouTube app: background playback with the screen locked, no ads, and automatic skipping of sponsor segments with [SponsorBlock](https://sponsor.ajay.app). The recommendation feed and the Shorts feed are gone too, so YouTube is for the videos you came for.
 
 Sister projects: [PSInstagram](https://github.com/pstepanovum/PSInstagram) and [PSLinkedIn](https://github.com/pstepanovum/PSLinkedIn), the same idea for other apps.
 
@@ -13,10 +13,16 @@ Sister projects: [PSInstagram](https://github.com/pstepanovum/PSInstagram) and [
 - **No ads**: video ads are never loaded, and promoted items are removed from feeds
 - **SponsorBlock**: sponsor segments, self-promotion and "like and subscribe" reminders are skipped automatically (intros, outros, previews, filler and non-music sections can be turned on too). A small notice shows what was skipped, and each segment is skipped once per video, so you can rewind into it
 - **Privacy-friendly lookups**: only the first 4 characters of the video ID's SHA-256 hash are sent to SponsorBlock
-- **Settings that don't slip**: backed up to the iOS keychain and restored after a reinstall
+- **No Home feed**: the Home tab is removed and the app opens on Subscriptions
+- **No Shorts feed**: the Shorts tab and shelves are removed. A Short you open from a link still plays, but you can't scroll to the next one
+- **No rabbit holes**: recommended videos don't autoplay when a video ends (playlists still continue), end screen cards are hidden, and nothing shows under the search bar until you type
+- **No upsells or upload button**: "Get Premium" buttons, Premium promo bars and the + (upload) button are hidden
+- **Google sign-in works** on a re-signed install
+- **Settings that don't slip**: strict defaults, backed up to the iOS keychain and restored after a reinstall
 
 ## Opening the settings
-Hold **four fingers** anywhere on the screen for a second.
+- **You → Settings → PSYoutube**, or
+- Hold **four fingers** anywhere on the screen for a second
 
 ## Installing
 PSYoutube is sideloaded: you inject it into a decrypted YouTube IPA and sign that with your own certificate. It gets its own bundle ID (`com.pstepanovum.psyoutube`), so it installs next to the official YouTube app.
@@ -59,6 +65,8 @@ BUNDLE_ID=com.example.youtube ./dev.sh   # use a different bundle ID
 `dev.sh` signs with a minimal set of entitlements taken from your profile, because some reseller profiles contain malformed wildcard entitlements that crash apps.
 
 ## Known limitations
+- **Updating over an existing install can fail**, in which case `dev.sh` reinstalls it. Your PSYoutube settings come back from the keychain, but you may need to sign in to YouTube again.
+- **Some Premium offers can still show**, such as the "Try YouTube Premium" row on the You page.
 - **App extensions are removed** (share sheet, widgets, rich notifications).
 - **Use at your own risk.** Modified clients are against YouTube's terms of service.
 
