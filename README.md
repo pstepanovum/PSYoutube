@@ -4,7 +4,7 @@
 
 PSYoutube is an iOS tweak for the YouTube app: background playback with the screen locked, no ads, and automatic skipping of sponsor segments with [SponsorBlock](https://sponsor.ajay.app). The recommendation feed and the Shorts feed are gone too, so YouTube is for the videos you came for.
 
-Sister projects: [PSInstagram](https://github.com/pstepanovum/PSInstagram) and [PSLinkedIn](https://github.com/pstepanovum/PSLinkedIn), the same idea for other apps.
+Sister projects: [PSInstagram](https://github.com/pstepanovum/PSInstagram), [PSLinkedIn](https://github.com/pstepanovum/PSLinkedIn) and [PSSoundcloud](https://github.com/pstepanovum/PSSoundcloud), the same idea for other apps.
 
 ---
 
