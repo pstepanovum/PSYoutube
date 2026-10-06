@@ -35,6 +35,7 @@
             @"header": @"Focus",
             @"rows": @[
                 [PSISetting switchCellWithTitle:@"No autoplay of recommendations" subtitle:@"When a video ends, nothing new starts by itself (playlists still continue)" defaultsKey:@"disable_autonav"],
+                [PSISetting switchCellWithTitle:@"Hide recommended videos" subtitle:@"No list of suggested videos under the one you're watching; the description and comments stay" defaultsKey:@"hide_related_videos"],
                 [PSISetting switchCellWithTitle:@"Hide end screen cards" subtitle:@"Hides the suggested videos placed over the last seconds of a video" defaultsKey:@"hide_endscreen_cards"],
                 [PSISetting switchCellWithTitle:@"Hide Premium promos" subtitle:@"No \"Try YouTube Premium\" bars" defaultsKey:@"hide_premium_promos"],
                 [PSISetting switchCellWithTitle:@"No trending or search history" subtitle:@"Nothing is shown under the search bar until you type. To stop recording history, pause it in YouTube: Settings > Manage all history" defaultsKey:@"hide_search_history"]

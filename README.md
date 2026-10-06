@@ -15,7 +15,7 @@ Sister projects: [PSInstagram](https://github.com/pstepanovum/PSInstagram), [PSL
 - **Privacy-friendly lookups**: only the first 4 characters of the video ID's SHA-256 hash are sent to SponsorBlock
 - **No Home feed**: the Home tab is removed and the app opens on Subscriptions
 - **No Shorts feed**: the Shorts tab and shelves are removed. A Short you open from a link still plays, but you can't scroll to the next one
-- **No rabbit holes**: recommended videos don't autoplay when a video ends (playlists still continue), end screen cards are hidden, and nothing shows under the search bar until you type
+- **No rabbit holes**: no list of recommended videos under the one you're watching (the description and comments stay), recommended videos don't autoplay when a video ends (playlists still continue), end screen cards are hidden, and nothing shows under the search bar until you type
 - **No upsells or upload button**: "Get Premium" buttons, Premium promo bars and the + (upload) button are hidden
 - **Google sign-in works** on a re-signed install
 - **Settings that don't slip**: strict defaults, backed up to the iOS keychain and restored after a reinstall

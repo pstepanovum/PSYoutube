@@ -26,6 +26,22 @@
 }
 %end
 
+// "Up next" recommendations under the video. The watch page is a list of sections: the first holds the title,
+// channel, description and comments preview; the rest are chips and recommended videos. Only show the first
+@interface YTWatchNextResultsViewController : UIViewController
+@end
+
+%hook YTWatchNextResultsViewController
+- (void)setVisibleSections:(long long)sections {
+    %orig([PSIUtils getBoolPref:@"hide_related_videos"] ? MIN(sections, 1) : sections);
+}
+
+- (long long)visibleSections {
+    long long sections = %orig;
+    return [PSIUtils getBoolPref:@"hide_related_videos"] ? MIN(sections, 1) : sections;
+}
+%end
+
 // Suggested videos and channel cards the creator places over the last seconds of a video
 @interface YTCreatorEndscreenView : UIView
 @end

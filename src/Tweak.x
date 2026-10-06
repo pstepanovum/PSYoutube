@@ -20,6 +20,7 @@ static void PSISetupSettings(void) {
         @"hide_search_history": @(YES),
         @"disable_autonav": @(YES),
         @"hide_endscreen_cards": @(YES),
+        @"hide_related_videos": @(YES),
         @"hide_premium_promos": @(YES),
         @"fix_playback": @(YES),
         @"sb_sponsor": @(YES),
